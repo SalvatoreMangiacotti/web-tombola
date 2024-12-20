@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
 body {
     font-family: "Gochi Hand", serif;
+    background-color: #18a495;
+}
+
+header {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 70%;
+}
+
+#container_tombola {
+    background-color: lavender;
+    min-height: 85vh;
+    flex-basis: 70%;
+}
+
+#container_lastNumber {
+    background-color: lightblue;
+    min-height: 35vh;
+    flex-basis: 30%;
 }
