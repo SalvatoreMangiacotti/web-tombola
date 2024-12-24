@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto", serif;
     background-color: #a2d6f9;
 }
 
@@ -35,8 +35,8 @@ ul li {
     gap: 1rem;
 }
 
-#lista_numeri > *{
-    background-color: khaki;
+#lista_numeri>* {
+    background-color: #f7e970;
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -60,9 +60,14 @@ ul li {
 
 #numero_estratto {
     background-color: lavender;
+    font-size: 5rem;
     border-radius: 25px;
     height: 300px;
     width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #container_comandi button {
@@ -70,6 +75,7 @@ ul li {
     border-radius: 25px;
     border: none;
     padding: 1rem;
+    width: 50%;
 }
 
 #container_comandi button:hover {
