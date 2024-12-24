@@ -9,6 +9,12 @@ body {
     background-color: #a2d6f9;
 }
 
+h1 {
+    font-family: "Gochi Hand", serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
 ul li {
     list-style: none;
 }
@@ -35,7 +41,7 @@ ul li {
     gap: 1rem;
 }
 
-#lista_numeri>* {
+#lista_numeri > * {
     background-color: #f7e970;
     border-radius: 50%;
     height: 60px;
@@ -58,7 +64,7 @@ ul li {
     gap: 1rem;
 }
 
-#numero_estratto {
+#container_numeroEstratto {
     background-color: lavender;
     font-size: 5rem;
     border-radius: 25px;

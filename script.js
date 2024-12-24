@@ -23,7 +23,7 @@ console.log(arrayListaNumeri);
 
 // 1.2 Estrazione e gestione di numero random dall'array visibile in pagina
 
-const numeroEstratto = document.getElementById('numero_estratto');
+const numeroEstratto = document.querySelector('#container_numeroEstratto h3');
 
 function estrazioneNumeroRandom() {
 
