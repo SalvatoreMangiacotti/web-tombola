@@ -78,7 +78,7 @@ ul li {
 }
 
 #container_comandi button,
-#gioca_ancora {
+#chiudi_finestra {
     background-color: #45c5f8;
     border-radius: 25px;
     border: none;
@@ -87,7 +87,7 @@ ul li {
 }
 
 #container_comandi button:hover,
-#gioca_ancora:hover {
+#chiudi_finestra:hover {
     transform: scale(1.1);
     cursor: pointer;
 }

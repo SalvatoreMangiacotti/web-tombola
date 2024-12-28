@@ -7,11 +7,13 @@
 // Messaggio vittoria
 
 const vittoria = document.getElementById('vittoria');
-const giocaAncora = document.getElementById('gioca_ancora');
+const chiudiFinestra = document.getElementById('chiudi_finestra');
 
-giocaAncora.addEventListener('click', () => {
-    
-    window.location.reload();
+chiudiFinestra.addEventListener('click', () => {
+
+    vittoria.style.visibility = 'hidden';
+    filterBlur.style.filter = 'none';
+    filterBlur.style.pointerEvents = 'inherit';
 
 })
 
