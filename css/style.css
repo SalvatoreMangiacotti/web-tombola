@@ -77,7 +77,8 @@ ul li {
     justify-content: center;
 }
 
-#container_comandi button {
+#container_comandi button,
+#gioca_ancora {
     background-color: #45c5f8;
     border-radius: 25px;
     border: none;
@@ -85,7 +86,28 @@ ul li {
     width: 50%;
 }
 
-#container_comandi button:hover {
+#container_comandi button:hover,
+#gioca_ancora:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+#vittoria {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 5px solid lightcoral;
+    
+    display: none;
+    z-index: 999;
+    height: 50%;
+    width: 50%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }

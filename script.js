@@ -7,6 +7,8 @@
 // 1.1 Gestione della lista numeri
 
 const listaNumeri = document.querySelectorAll('#lista_numeri li');
+const filterBlur = document.querySelector('.filter');
+
 const arrayListaNumeri = [];
 const arrayNumeriEstratti = [];
 
@@ -53,6 +55,9 @@ bottoneEstrai.addEventListener('click', () => {
 
         bottoneEstrai.disabled = true;
         bottoneTermina.disabled = false;
+        vittoria.style.display = "flex";
+        filterBlur.style.filter = 'blur(10px)';
+        filterBlur.style.pointerEvents = 'none';
 
     }
 
@@ -83,4 +88,13 @@ bottoneTermina.addEventListener('click', () => {
 
     }
 
+})
+
+// Messaggio vittoria
+
+const vittoria = document.getElementById('vittoria');
+const giocaAncora = document.getElementById('gioca_ancora');
+
+giocaAncora.addEventListener('click', () => {
+    window.location.reload();
 })
