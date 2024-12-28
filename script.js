@@ -4,6 +4,15 @@
 // Questo numero andrà  mostrato e la casella corrispondente verrà colorata in modo da segnalarne l’estrazione.
 // Non dimenticate di rimuovere il numero estratto dalla lista dei numeri estraibili per evitare doppioni!!
 
+// Messaggio vittoria
+
+const vittoria = document.getElementById('vittoria');
+const giocaAncora = document.getElementById('gioca_ancora');
+
+giocaAncora.addEventListener('click', () => {
+    window.location.reload();
+})
+
 // 1.1 Gestione della lista numeri
 
 const listaNumeri = document.querySelectorAll('#lista_numeri li');
@@ -55,7 +64,8 @@ bottoneEstrai.addEventListener('click', () => {
 
         bottoneEstrai.disabled = true;
         bottoneTermina.disabled = false;
-        vittoria.style.display = "flex";
+
+        vittoria.style.visibility = 'inherit';
         filterBlur.style.filter = 'blur(10px)';
         filterBlur.style.pointerEvents = 'none';
 
@@ -88,13 +98,4 @@ bottoneTermina.addEventListener('click', () => {
 
     }
 
-})
-
-// Messaggio vittoria
-
-const vittoria = document.getElementById('vittoria');
-const giocaAncora = document.getElementById('gioca_ancora');
-
-giocaAncora.addEventListener('click', () => {
-    window.location.reload();
 })
