@@ -10,7 +10,9 @@ const vittoria = document.getElementById('vittoria');
 const giocaAncora = document.getElementById('gioca_ancora');
 
 giocaAncora.addEventListener('click', () => {
+    
     window.location.reload();
+
 })
 
 // 1.1 Gestione della lista numeri
